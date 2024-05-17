@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+.container{
+    margin: 40px 16px 71px;
+    padding: 64px 24px;
+    border: 1px solid #4B5563;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+p{
+    color: #4B5563;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main-p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+.box-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.box{
+    background-color: #F5F5F5;
+    border: none;
+    padding: 32px 85px;
+    text-align: center;
+}
+
+.first{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.fourth{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+@media screen and (min-width:835px) {
+    .container{
+        padding: 128px 30px;
+        margin: 150px 80px;
+    }
+    
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .box{
+        border-radius: 0px;
+        padding: 32px 64px;
+    }
+
+    .first{
+        border-top-left-radius: 6px;
+    }
+
+    .secnd{
+        border-top-right-radius: 6px;
+    }
+
+    .third{
+        border-bottom-left-radius: 6px;
+    }
+
+    .fourth{
+        border-bottom-right-radius: 6px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .container{
+        padding: 128px 40px;
+    }
+
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .box{
+        border-radius: 0px;
+        padding: 32px 60px;
+    }
+
+    .first{
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    .fourth{
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+}
